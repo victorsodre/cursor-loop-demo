@@ -2,7 +2,7 @@
 
 A minimal, reproducible Git workflow for demonstrating the loop: branch → bad edit → restore → pull request.
 
-This repository is a content artifact for [@ovictor](https://github.com/ovictor), not an application. It has no API, build step, or runtime interface.
+This repository documents a Git workflow by [Victor Sodré](https://github.com/victorsodre). It has no API, build step, or runtime interface.
 
 ## Run the demonstration
 
