@@ -1,138 +1,64 @@
-# Briefing YouTube · CURSOR-LOOP
-## Medo de tocar o código com Cursor: branch, revert, PR
+# YouTube Briefing: Cursor Loop
 
-Alvo: ~12–18 min (corta se a verdade for menor). PT na voz/tela. Legenda EN depois. Faceless (a demo é o rosto). Victor monta no Premiere/AE.
-Fase 1: não publicar. Sem upload. Sem travessão no título.
+## Editing code with Cursor: branch, revert, pull request
 
-Tese (dizer em voz alta antes dos 3 min):
-eu dirijo, o agente executa, o trabalho termina em PR. Se estragar, eu reverte. O medo de tocar some quando o loop tem freio.
+**Target length:** 12–18 minutes, shortened if the honest material is shorter. The initial recording may be in Brazilian Portuguese with English subtitles in the description. The demonstration is the on-screen subject; it does not require a talking-head segment.
 
-Origem:
-comentário no X do Victor sobre não temer editar porque dá pra reverter e testar mais versões. Victor é o rosto do método. Não nomear handle de terceiro como protagonista. Creditar só se virar reply pública útil; senão, a origem fica como “comentário no feed” e segue o ofício.
+**Publication status:** draft only. Do not upload or publish from this document.
 
-Ângulo: medo → revert → loop Cursor (humano no volante, agente nas mãos, fim em PR). Fila v4 #3.
-Lane: ofício · nível inter · frente agentes.
-ZERO Remotion · zero remotion-agent-catalog · zero render preto · zero 3D.
+## Core statement
 
-Artefato (recibo sugerido · **precisa rodar** antes de gravar):
-- 1 branch limpa a partir do main
-- 1 edit ruim do agente (diff errado, arquivo errado, ou regressão óbvia na tela)
-- 1 revert (git restore / git revert / reset seguro na branch; mostrar o comando e o estado depois)
-- 1 PR aberto com o caminho bom (humano aprovou o fim)
-- Sem inventar número de PR. Quando existir, cola o link/hash no card de Artefato. Até lá: rótulo **precisa rodar**.
+> I drive. The agent executes. The work ends in a pull request. If it breaks, I revert it.
 
-Thumb (rascunho): tela com revert (ou git status limpo) | card de PR · texto 2–4 palavras: "REVERT + PR" ou "EU DIRIJO"
-Victor aprova. Sem upload.
+The episode should show that a branch and a reversible workflow reduce the cost of trying an agent-assisted change. It should not claim that an agent is inherently reliable.
 
-Persona / Faraday (obrigatório neste card):
-- Mother line: "Método com recibo: IA do básico ao avançado, o que eu rodei e onde quebrou."
-- Audiência: coder BR com medo de o agente bagunçar o repo.
-- Vantagem única: ele já posta o loop Cursor→PR; aqui mostra falha + revert de verdade, não “Composer resolveu”.
-- Formato: hábitos com freio, detalhado (mercado raso = milagre Composer).
-- Promessa: thumb com revert/PR, não guru.
+## Required evidence
 
----
+Record a real session before filming:
 
-## Corte Librarian (10 linhas, voz montage)
+- A clean branch created from main.
+- One unwanted agent edit: wrong file, out-of-scope diff, or visible regression.
+- One restore or revert, including the resulting repository state.
+- One pull request containing the approved path.
+- Real links and hashes only. Do not invent a pull-request number.
 
-1. Abre no diff ruim. Silêncio. Depois: isso veio do agente.
-2. Medo do coder BR: tocar = estragar o repo. O freio é branch + revert.
-3. Regra 1: eu dirijo. Agente executa. Trabalho termina em PR.
-4. Abre branch. Pedido curto. Agente mexe. Diff na tela.
-5. Edit ruim de propósito ou de verdade. Não esconde.
-6. Revert. Comando. Estado limpo. Medo cai um degrau.
-7. Segundo passe: pedido melhor, escopo menor, eu no volante.
-8. PR aberto. Título do commit. Humano aprovou o fim.
-9. Habits: branch sempre · pedido com borda · ler diff · revert sem drama · PR é o recibo.
-10. Fecha sem triunfo. Onde quebrou fica no vídeo. Sem hype.
+If any evidence is staged for teaching, disclose it on screen. A real failed session is preferable.
 
-## Ordem dos capítulos
+## Recording outline
 
-### 0. Abre no defeito (0:00–0:40)
-Diff feio fullscreen. Um segundo de silêncio. Depois: isso saiu do agente. Não explica ainda. Só o fato estranho.
+1. **Open on the defect (0:00–0:40).** Show the unwanted diff in full screen. Pause, then state that it came from the agent.
+2. **State the concern (0:40–2:30).** Editing with an agent can damage a repository; a branch and revert provide the safety rail.
+3. **Give the rule (2:30–4:00).** “I drive. The agent executes. The work ends in a pull request.”
+4. **Create the branch (4:00–6:00).** Show a clean Git status, a new branch, and a bounded request: target file, scope, and exclusions.
+5. **Show the unwanted edit (6:00–9:00).** Explain the concrete mismatch without presenting it as a success.
+6. **Revert cleanly (9:00–11:30).** Show the command and the cleaned state. Explain that a lower cost of failure makes experimentation practical.
+7. **Make a second pass (11:30–14:30).** Narrow the request, review the diff line by line, and accept only what meets the goal.
+8. **Open the pull request (14:30–16:30).** Show a concise title and description: requested work, observed failure, and final result.
+9. **Close with habits.** Branch first; bound the request; read the full diff; revert without drama; finish in a PR; treat silent failure as a vague request.
 
-### 1. O medo e a aposta (0:40–2:30)
-Coder BR: “se eu deixar o agente mexer, estraga o repo.”
-Aposta do episódio: branch + revert tiram o medo; o loop (eu dirijo → agente executa → PR) é o método.
-Comentário no X inspirador: creditar o *insight* (reverter / testar versões), sem protagonizar handle alheio. Victor conduz.
+## Suggested B-roll
 
-### 2. A regra em uma frase (2:30–4:00)
-Eu dirijo. O agente executa. O trabalho termina em PR.
-Não é “IA faz por mim”. É volante + freio.
-MOSTRAR: card simples com as três partes (sem animação 3D, sem Remotion).
+1. Full-screen unwanted diff.
+2. Git status and the new branch.
+3. The bounded Cursor request.
+4. Side-by-side: unwanted diff and clean state after restore.
+5. Second-pass hunk review.
+6. Pull-request screen or the real flow to create it.
+7. A plain card listing the six habits.
 
-### 3. Branch antes do medo (4:00–6:00)
-Repo real (ou pasta de trabalho honestamente rotulada). `git status` limpo. Nova branch.
-Pedido curto ao agente: escopo, arquivo, o que NÃO tocar.
-Habits aqui: borda no pedido > prompt longo.
+## Editorial constraints
 
-### 4. O edit ruim (6:00–9:00)
-Agente mexe. Diff na tela. Onde quebrou: arquivo errado, teste quebrado, ou mudança fora do pedido.
-Não narrar como vitória. Mostrar o erro como ofício.
-Se o erro for encenado pra aula: dizer. Se for de sessão real: melhor. Sem fake PR number.
+- Do not use invented statistics, pull-request numbers, or fabricated outcomes.
+- Do not claim that “Composer solved it.”
+- Do not turn another person’s handle into the protagonist.
+- Do not use unrelated Remotion, 3D, or render material.
+- Do not end by claiming that the workflow was perfect.
+- Use the pull request as evidence, not as a popularity claim.
 
-### 5. Revert sem drama (9:00–11:30)
-Comando de volta. Working tree limpa ou commit revertido.
-Tese em voz: o medo de tocar some quando o custo de errar cai.
-MOSTRAR: antes (diff ruim) | depois (limpo).
+## Pre-recording checklist
 
-### 6. Segundo passe, eu no volante (11:30–14:30)
-Mesmo objetivo. Pedido mais apertado. Eu leio o diff linha a linha.
-Aceito o que presta. Recuso o resto. Agente não edita o meio sem eu ver.
-Fecha o caminho bom. Commit com mensagem humana.
-
-### 7. PR = recibo (14:30–16:30)
-Abre PR. Título. Description curta: o que pedi, o que quebrou, o que ficou.
-Sem número inventado. Se ainda **precisa rodar**, grava só até o `gh pr create` / tela do PR na sessão real e cola o link depois no Artefato.
-Promessa da thumb: revert + PR, não cara de guru.
-
-### 8. Habits / Rules (pode fundir com 7 se o tempo apertar)
-1. Sempre branch.
-2. Pedido com borda (arquivo / fora de escopo).
-3. Ler o diff inteiro.
-4. Revert é ferramenta, não fracasso.
-5. Fim do loop é PR, não chat.
-6. Se o agente falhou em silêncio, o pedido estava vago.
-
-### 9. Fecha (16:30–18:00+)
-Onde está: branch, revert, PR (links quando existirem).
-Se a verdade for menor que 12–18 min: corta. Sem enchimento.
-Cortar primeiro: alongar menos o §2; priorizar §4–§7 (falha + revert + PR).
-Não fechar com “e a IA resolveu tudo”.
-
----
-
-## Takes / B-roll (ordem sugerida)
-1. Diff ruim fullscreen
-2. `git status` / nova branch
-3. Chat do Cursor com pedido bordado
-4. Diff lado a lado (ruim | limpo pós-revert)
-5. Segundo passe: aceitar/recusar hunks
-6. Tela do PR (ou fluxo até abrir)
-7. Card Habits 1–6 (texto seco, sem motion 3D)
-
-## Recusar
-- Remotion, catálogo, render preto, three.js, bloom, SHA de frame
-- “Composer resolveu” como tese
-- Talking-head guru / renda com IA
-- Nomear handle de terceiro como herói do método
-- Inventar número de PR / “7 PRs” na manchete sem tela
-- Travessão (—) no título
-- Narrar tweet linha a linha
-- Fechar com “funcionou perfeito”
-
-## Dual
-X = PT text-only (THREAD.md neste pacote; Victor posta).
-YT = PT + legenda EN na descrição (fase 1: não publicar).
-
-## Checklist pré-gravação
-- [ ] Sessão **precisa rodar**: branch + edit ruim + revert + PR
-- [ ] Links/hashes reais colados no Artefato (sem inventar)
-- [ ] Thumb rascunho aprovado por Victor
-- [ ] Corte Librarian gravável em 10 takes
-- [ ] Zero asset Remotion/3D no timeline
-
----
-
-## Voice-cut (Librarian) · aplicado
-Ângulo sem jargão Scout/Faraday na linha. Formato em PT. Corte montage 10 linhas já no card (§ acima) — mantém. Zero Remotion. Sem travessão no título. Sem publicar.
+- [ ] Real branch, unwanted edit, restore/revert, and PR completed.
+- [ ] Real links and hashes added where shown.
+- [ ] Thumbnail draft approved by Victor.
+- [ ] The ten-beat outline is recordable.
+- [ ] No unrelated visual assets in the edit.
